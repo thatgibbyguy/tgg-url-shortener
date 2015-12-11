@@ -1,0 +1,49 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# __ Base meteor packages
+session
+jquery
+tracker
+spacebars
+mongo
+meteor-base
+mobile-experience
+blaze-html-templates
+standard-minifiers
+logging
+reload
+email
+ejson
+random
+check
+
+# __ Routing packages
+iron:router
+kadira:flow-router
+
+# __ SEO Packages
+spiderable
+reywood:iron-router-ga
+
+# __ Data Packages
+aldeed:autoform
+aldeed:collection2
+matteodem:server-session
+
+# __ Front End Packages
+less
+fortawesome:fontawesome
+kevohagan:sweetalert
+
+# __ Reporting
+meteorhacks:kadira
+meteorhacks:kadira-profiler
+
+# __ Testing packages
+velocity:core
+velocity:console-reporter
+xolvio:cucumber
