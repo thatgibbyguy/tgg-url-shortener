@@ -1,13 +1,16 @@
-// var Schemas = {};
+var Schemas = {};
 
-// exampleCollection = new Mongo.Collection('examplecollection');
+APIKeys = new Mongo.Collection('apikeys');
 
-// Schemas.exampleCollectionSchema = new SimpleSchema({
-// 	key:{
-// 		type: String,
-// 		label: "key label"
-// 	}
-// });
+Schemas.APIKeysSchema = new SimpleSchema({
+	owner: {
+		type: String,
+		label: "API Key Owner"
+	},
+	key: {
+		type: String,
+		label: "API Key"
+	}
+});
 
-// Codes.attachSchema(Schemas.exampleCollectionSchema);
-
+APIKeys.attachSchema(Schemas.APIKeysSchema);

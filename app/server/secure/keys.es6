@@ -1,0 +1,1 @@
+Kadira.connect('i6XWoRNEXQqaABEx2', '6b4d74ce-ac00-43d6-9d7d-d32abbce431d');

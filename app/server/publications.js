@@ -1,3 +1,3 @@
-// Meteor.publish('codes',function(){
-// 	return Codes.find();
-// });
+Meteor.publish('apikeys',function(){
+	return APIKeys.find();
+});

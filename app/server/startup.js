@@ -1,5 +1,3 @@
 Meteor.startup(function() {
-	console.log('Welcome to the TGG Meteor Boilerplate!')
+	console.log('Starting the TGG url shortener')
 });
-
-// Kadira.connect('', '');
