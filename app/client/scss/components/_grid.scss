@@ -2,14 +2,14 @@
 -----------------------------------------------------------------------------*/
 .units-container,
 .units-row {
-  .clearfix;
+  @include clearfix;
 }
 .units-container { /* it's the trick to not collapse padding-top in the child element */
 	padding-top: 1px;
     margin-top: -1px;
 }
 .units-row {
-	margin-bottom: @base-line;
+	margin-bottom: $base-line;
 }
 
 .width-100, .unit-100 { width: 100%;  }
@@ -45,26 +45,26 @@
 .units-row .unit-20,
 .units-row .unit-10 {
     float: left;
-	margin-left: @grid-gutter-width/(@grid-width/100)*1%;
+	margin-left: $grid-gutter-width/($grid-width/100)*1%;
 	&:first-child {
 		margin-left: 0;
 	}
 }
-.units-row .unit-90 { .columns(9, 10); }
-.units-row .unit-80 { .columns(4, 5); }
-.units-row .unit-75 { .columns(3, 4); }
-.units-row .unit-70 { .columns(7, 10); }
-.units-row .unit-66 { .columns(2, 3); }
-.units-row .unit-65 { .columns(2, 3); }
-.units-row .unit-60 { .columns(3, 5); }
-.units-row .unit-50 { .column(2); }
-.units-row .unit-40 { .columns(2, 5); }
-.units-row .unit-35 { .column(3); }
-.units-row .unit-33 { .column(3); }
-.units-row .unit-30 { .columns(3, 10); }
-.units-row .unit-25 { .column(4); }
-.units-row .unit-20 { .column(5); }
-.units-row .unit-10 { .columns(1, 10); }
+.units-row .unit-90 { @include columns(9, 10); }
+.units-row .unit-80 { @include columns(4, 5); }
+.units-row .unit-75 { @include columns(3, 4); }
+.units-row .unit-70 { @include columns(7, 10); }
+.units-row .unit-66 { @include columns(2, 3); }
+.units-row .unit-65 { @include columns(2, 3); }
+.units-row .unit-60 { @include columns(3, 5); }
+.units-row .unit-50 { @include column(2); }
+.units-row .unit-40 { @include columns(2, 5); }
+.units-row .unit-35 { @include column(3); }
+.units-row .unit-33 { @include column(3); }
+.units-row .unit-30 { @include columns(3, 10); }
+.units-row .unit-25 { @include column(4); }
+.units-row .unit-20 { @include column(5); }
+.units-row .unit-10 { @include columns(1, 10); }
 
 .unit-push-90,
 .unit-push-80,
@@ -83,28 +83,28 @@
 .unit-push-10 {
 	position: relative;
 }
-.unit-push-90 { .columns-push(9, 10); }
-.unit-push-80 { .columns-push(4, 5); }
-.unit-push-75 { .columns-push(3, 4); }
-.unit-push-70 { .columns-push(7, 10); }
-.unit-push-66 { .columns-push(2, 3); }
-.unit-push-65 { .columns-push(2, 3); }
-.unit-push-60 { .columns-push(3, 5); }
-.unit-push-50 { .column-push(2); }
-.unit-push-40 { .columns-push(2, 5); }
-.unit-push-35 { .column-push(3); }
-.unit-push-33 { .column-push(3); }
-.unit-push-30 { .columns-push(3, 10); }
-.unit-push-25 { .column-push(4); }
-.unit-push-20 { .column-push(5); }
-.unit-push-10 { .columns-push(1, 10); }
+.unit-push-90 { @include columns-push(9, 10); }
+.unit-push-80 { @include columns-push(4, 5); }
+.unit-push-75 { @include columns-push(3, 4); }
+.unit-push-70 { @include columns-push(7, 10); }
+.unit-push-66 { @include columns-push(2, 3); }
+.unit-push-65 { @include columns-push(2, 3); }
+.unit-push-60 { @include columns-push(3, 5); }
+.unit-push-50 { @include column-push(2); }
+.unit-push-40 { @include columns-push(2, 5); }
+.unit-push-35 { @include column-push(3); }
+.unit-push-33 { @include column-push(3); }
+.unit-push-30 { @include columns-push(3, 10); }
+.unit-push-25 { @include column-push(4); }
+.unit-push-20 { @include column-push(5); }
+.unit-push-10 { @include columns-push(1, 10); }
 
 .units-row .unit-push-right {
 	float: right;
 }
 .units-row {
 	& .unit-role-right {
-		margin-left: @grid-gutter-width/(@grid-width/100)*1%;
+		margin-left: $grid-gutter-width/($grid-width/100)*1%;
 		float: right;
 	}
 	& .unit-role-left {
@@ -119,7 +119,7 @@
 }
 
 .unit-padding {
-	padding: @base-line;
+	padding: $base-line;
 }
 .units-padding .unit-100,
 .units-padding .unit-90,
@@ -137,7 +137,7 @@
 .units-padding .unit-25,
 .units-padding .unit-20,
 .units-padding .unit-10 {
-	padding: @base-line;
+	padding: $base-line;
 }
 
 .units-split .unit-90,

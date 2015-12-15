@@ -1,20 +1,20 @@
 /* =Typography
 -----------------------------------------------------------------------------*/
 body {
-	font-family: @font-family-base;
-	font-size: @font-size-base;
-	line-height: @base-line;
-	background: @background-body;
-	color: @color-body;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $base-line;
+	background: $background-body;
+	color: $color-body;
 }
 
 /* =Links
 -----------------------------------------------------------------------------*/
 a {
-	color: @color-link;
+	color: $color-link;
 	&:focus,
 	&:hover {
-		color: @color-link-hover;
+		color: $color-link-hover;
 	}
 }
 
@@ -32,9 +32,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-	font-family: @font-family-headings;
+	font-family: $font-family-headings;
 	font-weight: bold;
-	color: @color-headings;
+	color: $color-headings;
 	text-rendering: optimizeLegibility;
 	margin: 0 0 .5em 0;
 }
@@ -52,28 +52,28 @@ h4,
 }
 h1,
 .h1 {
-	font-size: @font-size-h1-lg;
+	font-size: $font-size-h1-lg;
 }
 h2,
 .h2 {
-	font-size: @font-size-h2-lg;
+	font-size: $font-size-h2-lg;
 	margin-bottom: .7em;
 }
 h3,
 .h3 {
-	font-size: @font-size-h3-lg;
+	font-size: $font-size-h3-lg;
 }
 h4,
 .h4 {
-	font-size: @font-size-h4-lg;
+	font-size: $font-size-h4-lg;
 }
 h5,
 .h5 {
-	font-size: @font-size-h5-lg;
+	font-size: $font-size-h5-lg;
 }
 h6,
 .h6 {
-	font-size: @font-size-h6-lg;
+	font-size: $font-size-h6-lg;
 	text-transform: uppercase;
 }
 
@@ -81,9 +81,9 @@ h6,
 /* =Lead
 -----------------------------------------------------------------------------*/
 .lead {
-	font-size: @font-size-lead;
-	line-height: @line-height-lead;
-	margin-bottom: @base-line / 1.5;
+	font-size: $font-size-lead;
+	line-height: $line-height-lead;
+	margin-bottom: $base-line / 1.5;
 }
 
 /* =Line height and margin
@@ -97,7 +97,7 @@ dt,
 blockquote,
 td,
 th {
-	line-height: @base-line;
+	line-height: $base-line;
 }
 ul,
 ol,
@@ -105,7 +105,7 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-	margin: 0 0 0 @base-line * 2;
+	margin: 0 0 0 $base-line * 2;
 }
 ul li,
 ol li {
@@ -129,7 +129,7 @@ form,
 fieldset,
 figure,
 address {
-	margin-bottom: @base-line;
+	margin-bottom: $base-line;
 }
 
 /* =Blockquote
@@ -138,9 +138,9 @@ blockquote {
 	position: relative;
 	font-style: italic;
 	font-size: 1.125em;
-	margin-left: @base-line * 1.5;
-	padding-left: @base-line;
-	border-left: 2px solid @color-blockquote-border;
+	margin-left: $base-line * 1.5;
+	padding-left: $base-line;
+	border-left: 2px solid $color-blockquote-border;
 	& p {
 		margin-bottom: .5em;
 	}
@@ -152,7 +152,7 @@ cite {
 }
 small,
 blockquote cite {
-	font-size: @font-size-small;
+	font-size: $font-size-small;
 	line-height: 1;
 }
 
@@ -169,7 +169,7 @@ dl dt {
 	font-weight: bold;
 }
 dd {
-	margin-left: @base-line;
+	margin-left: $base-line;
 }
 
 /* =Text-level
@@ -180,7 +180,7 @@ del {
 }
 abbr[title],
 dfn[title] {
-	border-bottom: 1px dotted @color-black;
+	border-bottom: 1px dotted $color-black;
 	cursor: help;
 }
 strong,
@@ -193,7 +193,7 @@ i {
 }
 sub,
 sup {
-	font-size: @font-size-smaller;
+	font-size: $font-size-smaller;
 	line-height: 0;
 	position: relative;
 }
@@ -205,7 +205,7 @@ sub {
 }
 figcaption {
 	margin: .3em 0;
-	font-size: @font-size-small;
+	font-size: $font-size-small;
 	font-style: italic;
 }
 ins,
@@ -213,8 +213,8 @@ u {
 	text-decoration: underline;
 }
 mark {
-	background-color: @color-yellow;
-	color: @color-black;
+	background-color: $color-yellow;
+	color: $color-black;
 	text-decoration: none;
 }
 
@@ -228,13 +228,13 @@ var,
 output {
 	font-size: 90%;
 	font-style: normal;
-	font-family: @font-family-code;
+	font-family: $font-family-code;
 }
 pre {
-	margin-top: @base-line;
+	margin-top: $base-line;
 	font-size: 100%;
 	line-height: 1.5;
-	color: @color-body;
+	color: $color-body;
 	overflow: auto;
 }
 code,
@@ -246,25 +246,25 @@ kbd {
 	border-radius: 2px;
 }
 code {
-	background: @color-code-background;
-	border: 1px solid @color-code-border;
+	background: $color-code-background;
+	border: 1px solid $color-code-border;
 }
 pre code {
 	font-size: 100%;
 	border: none;
 	padding: 0;
 	background: none;
-	line-height: @base-line;
+	line-height: $base-line;
 }
 var {
 	color: rgba(0, 0, 0, .5);
 }
 samp {
-	background: @color-blue-pastel;
-	border: 1px solid darken(@color-blue-pastel, 7%);
+	background: $color-blue-pastel;
+	border: 1px solid darken($color-blue-pastel, 7%);
 }
 kbd {
-	background: @color-black;
+	background: $color-black;
 	color: rgba(255, 255, 255, .85);
 	white-space: nowrap;
 }
@@ -277,14 +277,14 @@ button:focus {
 }
 textarea,
 select {
-	font-family: @font-family-controls;
+	font-family: $font-family-controls;
 	font-size: 1em;
 	box-shadow: none;
 }
 textarea,
 select[multiple],
 select[multiple="multiple"] {
-	padding: @padding-input;
+	padding: $padding-input;
 	line-height: 1.35em;
 	width: 100%;
 }
@@ -302,11 +302,11 @@ input[type="color"],
 input[type="time"],
 input[type="search"],
 input[type="datetime-local"] {
-	font-family: @font-family-controls;
+	font-family: $font-family-controls;
 	font-size: 1em;
 	box-shadow: none;
-	padding: @padding-input;
-	line-height: @base-line;
+	padding: $padding-input;
+	line-height: $base-line;
 	border-radius: 0;
 	outline: none;
 }
@@ -327,8 +327,8 @@ input[type="color"],
 input[type="time"],
 input[type="search"],
 input[type="datetime-local"] {
-	background: @color-white;
-	border: 1px solid @color-input-border;
+	background: $color-white;
+	border: 1px solid $color-input-border;
 	position: relative;
 	z-index: 2;
 	-webkit-appearance: none;
@@ -350,7 +350,7 @@ input[type="search"],
 input[type="datetime-local"] {
 	&[disabled] {
 		resize: none;
-		color: rgba(0, 0, 0, .8);
+		color: rgba(0, 0, 0, .5);
 	}
 }
 select,
@@ -374,9 +374,9 @@ select {
 	margin-bottom: 0 !important;
 }
 fieldset {
-	padding: @base-line;
-	margin-bottom: @base-line;
-	border: 1px solid @color-fieldset-border;
+	padding: $base-line;
+	margin-bottom: $base-line;
+	border: 1px solid $color-fieldset-border;
 	& *:last-child {
 		margin-bottom: 0 !important;
 	}
@@ -397,15 +397,15 @@ table {
 
 	caption {
 		text-transform: uppercase;
-		padding: 0 @base-line / 1.5;
+		padding: 0 $base-line / 1.5;
 		color: rgba(0, 0, 0, .4);
-		font-size: @font-size-small;
+		font-size: $font-size-small;
 	}
 
 	th,
 	td {
-		border-bottom: 1px solid @color-table-border;
-		padding: @base-line / 2 @base-line / 1.5;
+		border-bottom: 1px solid $color-table-border;
+		padding: $base-line / 2 $base-line / 1.5;
 	}
 
 	tfoot th,

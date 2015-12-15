@@ -7,6 +7,6 @@ Router.configure({
 Router.route('/',{
 	name: 'home',
 	waitOn: function() { 
-		// return Meteor.subscribe('collectionName'); 
+		return Meteor.subscribe('apikeys'); 
 	}
 });

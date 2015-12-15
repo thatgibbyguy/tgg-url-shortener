@@ -13,7 +13,7 @@
 	  top: .2em;
 	  right: 5px;
 	  z-index: 2;
-	  .close();
+	  @include close();
 	}
 }
 .livesearch-icon {
@@ -42,6 +42,6 @@
 	    width: 2px;
 	    height: 7px;
 	    margin-top: 0;
-		.rotate(-45deg);
+		@include rotate(-45deg);
 	}
 }

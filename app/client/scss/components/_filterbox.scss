@@ -46,10 +46,10 @@
 		color: #000;
 		cursor: pointer;
 		&:hover {
-			background: @color-gray-light;
+			background: $color-gray-light;
 		}
 		&.active {
-			background: @color-blue;
+			background: $color-blue;
 			color: #fff;
 		}
 	}

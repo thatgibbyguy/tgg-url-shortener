@@ -8,7 +8,7 @@
 	.blocks-5,
 	.blocks-6 {
 		margin-left: 0;
-		margin-bottom: @base-line;
+		margin-bottom: $base-line;
 	}
 
 	.blocks-2 > li,
@@ -24,18 +24,18 @@
 	.blocks-mobile-50 > li,
 	.blocks-mobile-33 > li {
 		float: left;
-		margin-left: @grid-gutter-width/(@grid-width/100)*1%;
+		margin-left: $grid-gutter-width/($grid-width/100)*1%;
 	}
 	.blocks-mobile-33,
 	.blocks-mobile-50 {
-		margin-left: -@grid-gutter-width/(@grid-width/100)*1%;
+		margin-left: -$grid-gutter-width/($grid-width/100)*1%;
 	}
 
 	.blocks-mobile-50 > li {
-		.block(2);
+		@include block(2);
 	}
 	.blocks-mobile-33 > li {
-		.block(3);
+		@include block(3);
 	}
 
 

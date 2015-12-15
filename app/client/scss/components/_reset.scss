@@ -1,11 +1,11 @@
-@import "mixins.import.less";
+@import "mixins";
 
 /* =Reset
 -----------------------------------------------------------------------------*/
 *,
 *:before,
 *:after {
-	.box-sizing(border-box);
+	@include box-sizing(border-box);
 }
 
 html {

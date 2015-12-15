@@ -9,9 +9,9 @@
 	color: #000;
 	text-decoration: none;
 	font-weight: normal;
-	font-size: @font-size-base;
+	font-size: $font-size-base;
 	line-height: 1,4em;
-	background: @color-gray-pastel;
+	background: $color-gray-pastel;
 	cursor: pointer;
 
 	-webkit-touch-callout: none;
@@ -24,7 +24,7 @@
 	&.accordion-title-opened {
 		margin-bottom: 0;
 		font-weight: bold;
-		background: @color-gray-light;
+		background: $color-gray-light;
 	}
 	& a,
 	&:hover {
@@ -33,7 +33,7 @@
 	}
 }
 .accordion-panel {
-	padding: @base-line;
+	padding: $base-line;
 	margin-bottom: 10px;
 }
 .accordion-toggle {

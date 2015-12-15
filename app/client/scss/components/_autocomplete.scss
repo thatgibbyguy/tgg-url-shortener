@@ -18,10 +18,10 @@
 		display: block;
 		text-decoration: none;
 		&:hover {
-			background: @color-gray-light;
+			background: $color-gray-light;
 		}
 		&.active {
-			background: @color-blue;
+			background: $color-blue;
 			color: #fff;
 		}
 	}

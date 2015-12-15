@@ -13,7 +13,6 @@ mongo
 meteor-base
 mobile-experience
 blaze-html-templates
-standard-minifiers
 logging
 reload
 email
@@ -23,7 +22,6 @@ check
 
 # __ Routing packages
 iron:router
-kadira:flow-router
 
 # __ SEO Packages
 spiderable
@@ -47,3 +45,5 @@ meteorhacks:kadira-profiler
 velocity:core
 velocity:console-reporter
 xolvio:cucumber
+fourseven:scss
+seba:minifiers-autoprefixer
